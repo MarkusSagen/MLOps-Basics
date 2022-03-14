@@ -1,6 +1,8 @@
 # MLOps-Basics
 
- > There is nothing magic about magic. The magician merely understands something simple which doesn’t appear to be simple or natural to the untrained audience. Once you learn how to hold a card while making your hand look empty, you only need practice before you, too, can “do magic.” – Jeffrey Friedl in the book Mastering Regular Expressions
+[https://github.com/MarkusSagen/MLOps-Basics](https://github.com/graviraja/MLOps-Basics)
+
+> There is nothing magic about magic. The magician merely understands something simple which doesn’t appear to be simple or natural to the untrained audience. Once you learn how to hold a card while making your hand look empty, you only need practice before you, too, can “do magic.” – Jeffrey Friedl in the book Mastering Regular Expressions
 
 **Note: Please raise an issue for any suggestions, corrections, and feedback.**
 
@@ -87,7 +89,6 @@ References
 
 - [Simone Tutorial on Hydra](https://www.sscardapane.it/tutorials/hydra-tutorial/#executing-multiple-runs)
 
-
 ## Week 3: Data Version Control - DVC
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=easy&color=green"/>
@@ -153,7 +154,6 @@ References
 - [Huggingface Blog on ONNXRuntime](https://medium.com/microsoftazure/accelerate-your-nlp-pipelines-using-hugging-face-transformers-and-onnx-runtime-2443578f4333)
 - [Piotr Blog on onnx conversion](https://tugot17.github.io/data-science-blog/onnx/tutorial/2020/09/21/Exporting-lightning-model-to-onnx.html)
 
-
 ## Week 5: Model Packaging - Docker
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=easy&color=green"/>
@@ -183,7 +183,6 @@ References
 
 - [Analytics vidhya blog](https://www.analyticsvidhya.com/blog/2021/06/a-hands-on-guide-to-containerized-your-machine-learning-workflow-with-docker/)
 
-
 ## Week 6: CI/CD - GitHub Actions
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=medium&color=orange"/>
@@ -211,7 +210,6 @@ References
 
 - [Github actions](https://docs.github.com/en/actions/quickstart)
 
-
 ## Week 7: Container Registry - AWS ECR
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=medium&color=orange"/>
@@ -236,7 +234,6 @@ In this week, I will be going through the following topics:
 
 ![Docker](images/ecr_flow.png)
 
-
 ## Week 8: Serverless Deployment - AWS Lambda
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=medium&color=orange"/>
@@ -259,13 +256,11 @@ In this week, I will be going through the following topics:
 
 ![Docker](images/lambda_flow.png)
 
-
 ## Week 9: Prediction Monitoring - Kibana
 
 <img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=difficulty&message=medium&color=orange"/>
 
 Refer to the [Blog Post here](https://www.ravirajag.dev/blog/mlops-monitoring)
-
 
 Monitoring systems can help give us confidence that our systems are running smoothly and, in the event of a system failure, can quickly provide appropriate context when diagnosing the root cause.
 
