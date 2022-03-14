@@ -64,11 +64,15 @@ def main(cfg):
         monitor="valid/loss", patience=3, verbose=True, mode="min"
     )
 
-    wandb_logger = WandbLogger(project="MLOps Basics", entity="raviraja")
+    wandb_logger = WandbLogger(project="MLOps Basics", entity="mk3sagen")
     trainer = pl.Trainer(
         max_epochs=cfg.training.max_epochs,
         logger=wandb_logger,
-        callbacks=[checkpoint_callback, SamplesVisualisationLogger(cola_data), early_stopping_callback],
+        callbacks=[
+            checkpoint_callback,
+            SamplesVisualisationLogger(cola_data),
+            early_stopping_callback,
+        ],
         log_every_n_steps=cfg.training.log_every_n_steps,
         deterministic=cfg.training.deterministic,
         limit_train_batches=cfg.training.limit_train_batches,
