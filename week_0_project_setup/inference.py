@@ -1,6 +1,7 @@
 import torch
 from model import ColaModel
 from data import DataModule
+from sort_files import sort_files_by_date
 
 
 class ColaPredictor:
@@ -29,5 +30,6 @@ class ColaPredictor:
 
 if __name__ == "__main__":
     sentence = "The boy is sitting on a bench"
-    predictor = ColaPredictor("./models/epoch=0-step=267.ckpt")
+    checkpoint_file: str = sort_files_by_date("models/")[-1]
+    predictor = ColaPredictor(checkpoint_file)
     print(predictor.predict(sentence))
