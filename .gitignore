@@ -132,3 +132,6 @@ dmypy.json
 
 # Sphinx
 /docs/_build/
+
+# Project specific
+*/outputs/
