@@ -1,17 +1,19 @@
-import torch
-import hydra
-import wandb
 import logging
+import os
 
+import hydra
 import pandas as pd
 import pytorch_lightning as pl
+import torch
+import wandb
+from data import DataModule
+from model import ColaModel
 from omegaconf.omegaconf import OmegaConf
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 from pytorch_lightning.loggers import WandbLogger
 
-from data import DataModule
-from model import ColaModel
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 logger = logging.getLogger(__name__)
 

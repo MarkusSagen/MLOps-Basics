@@ -1,10 +1,13 @@
-import torch
+import os
+
 import pytorch_lightning as pl
+import torch
+from data import DataModule
+from model import ColaModel
 from pytorch_lightning.callbacks import ModelCheckpoint
 from pytorch_lightning.callbacks.early_stopping import EarlyStopping
 
-from data import DataModule
-from model import ColaModel
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 
 def main():
